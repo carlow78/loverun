@@ -1,15 +1,15 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to overrid default styles added by the browser. */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* General styles */
-body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,24 +19,24 @@ body{
 }
 
 /* Header */
-header{
-    background-color: #ffffff; 
-    padding 0 1rem;
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
     position: fixed;
-    z-index: 99; 
+    z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: inherit;
 }
 
-h1{
+h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -50,7 +50,7 @@ h1{
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -60,7 +60,7 @@ h1{
 
 /* Navbar styles with dropdown toggle */
 
-nav{
+nav {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -68,26 +68,26 @@ nav{
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top: 100%; 
+    top: 100%;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav{
+#nav-toggle:checked~nav {
     display: block;
 }
 
 /* Hide checkbox */
 
-#nav-toggle{
-    display:none;
+#nav-toggle {
+    display: none;
 }
 
-.nav.toggle-label{
+.nav.toggle-label {
     font-size: 2rem;
 }
 
 /* Main content */
-main{
+main {
     background-color: lightblue;
     /* Make main element take up any surplus to push footer down */
     flex: 1 0 auto;
@@ -95,13 +95,15 @@ main{
     margin-top: 47px;
 
 }
+
 /* Footer */
-footer{
+footer {
     background-color: orange;
 }
 
 /* Media query: tablets and larger (768px upwards) */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -110,42 +112,45 @@ footer{
         width: fit-content;
         padding-right: 1rem;
     }
-/* Add to show nav pages in a row instead of underneath in top right */
-    #menu{
+
+    /* Add to show nav pages in a row instead of underneath in top right */
+    #menu {
         display: flex;
     }
-/* Add to give space between nav pages */
 
-#menu > li{
-    padding-left: 1rem;
+    /* Add to give space between nav pages */
+
+    #menu>li {
+        padding-left: 1rem;
     }
-/* Hide checkbox */
 
-.nav-toggle-label{
-    display: none;
-}
+    /* Hide checkbox */
 
-/* Increase Logo font to make it larger on tablets */
+    .nav-toggle-label {
+        display: none;
+    }
 
-#logo{
-    font-size: 200%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-}
+    /* Increase Logo font to make it larger on tablets */
 
-/* Main content */
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 
-main{
-    /* Push main content down to accomodate larger header */
-    margin-top: 79px;
-}
+    /* Main content */
+
+    main {
+        /* Push main content down to accomodate larger header */
+        margin-top: 79px;
+    }
 
 }
 
 /* Large devices laptop upwards */
 
 @media screen and (min-width: 992px) {
-    #menu a:hover{
+    #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
 }
