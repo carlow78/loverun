@@ -125,4 +125,19 @@ footer{
     display: none;
 }
 
+/* Increase Logo font to make it larger on tablets */
+
+#logo{
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+}
+
+/* Main content */
+
+main{
+    /* Push main content down to accomodate larger header */
+    margin-top: 79px;
+}
+
 }
