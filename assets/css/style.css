@@ -96,9 +96,27 @@ main {
 
 }
 
-/* Footer */
+/* Footer - old footer.
 footer {
     background-color: orange;
+} */
+
+/* New footer for including social media icons and links */
+#social-networks{
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* Remove listing bullet points */
+    list-style-type: none;
+}
+
+/* Targets i elements for favicons */
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* Media query: tablets and larger (768px upwards) */
