@@ -91,6 +91,8 @@ main{
     background-color: lightblue;
     /* Make main element take up any surplus to push footer down */
     flex: 1 0 auto;
+    /* Push element down to make Main content visible */
+    margin-top: 47px;
 
 }
 /* Footer */
